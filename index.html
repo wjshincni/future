@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小天堂</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 授权界面 -->
+    <div class="auth-overlay" id="authOverlay">
+        <div class="auth-box">
+            <h1>AI小天堂</h1>
+            <input type="password" id="passwordInput" class="auth-input" placeholder="输入密码">
+            <button id="joinButton" class="auth-input">进入</button>
+        </div>
+    </div>
+    
+    <!-- 聊天界面 -->
+    <div class="chat-container" id="chatContainer"></div>
+    <div class="input-area">
+        <div class="input-group">
+            <input type="text" id="messageInput">
+            <button id="sendButton">→</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
