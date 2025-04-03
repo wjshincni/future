@@ -31,7 +31,7 @@ document.getElementById('joinButton').addEventListener('click', () => {
         messageInput.placeholder = '我好想你，我们要在一起很长很长一段时间';
         document.querySelector('.input-area').classList.remove('hidden');
         chatHistory.push({
-            text: "以下是真入回复",
+            text: "---以下是真入回复---",
             isUser: false,
             timestamp: Date.now()
         })
@@ -102,7 +102,7 @@ async function sendMessage(text) {
         if(data.code === 200) {
             // 保存机器人回复
             const botMsg = {
-                text: data.result.reply,
+                text: data.result.reply + "(伪人回复)",
                 isUser: false,
                 timestamp: Date.now()
             };
